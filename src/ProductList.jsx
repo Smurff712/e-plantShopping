@@ -4,6 +4,7 @@ import CartItem from "./CartItem";
 import { useDispatch } from "react-redux";
 import { addItem } from "./CartSlice";
 
+
 function ProductList({ onHomeClick }) {
   // Accept onHomeClick as a prop
   const [showCart, setShowCart] = useState(false); //` State to control the visibility of the CartItem component
@@ -307,6 +308,8 @@ function ProductList({ onHomeClick }) {
     e.preventDefault();
     setShowCart(false);
   };
+
+
 
   return (
     <div>
